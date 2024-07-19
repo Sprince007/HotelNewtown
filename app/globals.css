@@ -1,0 +1,309 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: white) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.room-highlights-title {
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #333;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.room-highlights-list {
+  list-style-type: disc; /* Use 'disc' for bullet points */
+  padding-left: 1.2rem; /* Indent the list */
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.room-highlights-list li {
+  margin-bottom: 0.5rem; /* Add space between list items */
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom styles for homepage */
+h1, h2 {
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.p-8 {
+  padding: 2rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-64 {
+  height: 16rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.md\:grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.lg\:grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.text-green-600 {
+  color: #16a34a;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+/* Additional utility classes */
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-opacity-40 {
+  background-opacity: 0.4;
+}
+
+.text-6xl {
+  font-size: 4rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+/* global.css or a similar global stylesheet */
+.img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.img-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* global.css or a similar global stylesheet */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+/* global.css or a similar global stylesheet */
+
+:root {
+  --cream: #f5f5dc;
+  --cream-light: #faf9f6;
+  --gray-light: #d3d3d3;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-slide-in {
+  animation: slideIn 1.5s ease-in-out;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, var(--cream), var(--cream-light), var(--gray-light));
+}
+
+/* global.css or a similar global stylesheet */
+
+:root {
+  --cream: #f5f5dc;
+  --cream-light: #faf9f6;
+  --gray-light: #d3d3d3;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, var(--cream), var(--cream-light), var(--gray-light));
+}
+
+.transition-opacity {
+  transition: opacity 1s ease-in-out;
+}
+
+/* global.css or a similar global stylesheet */
+
+:root {
+  --cream: #dee68c;
+  --cream-light: #faf9f6;
+  --gray-light: #9f9797;
+  --gray: #808080;
+  --gray-dark: #505050;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, var(--cream), var(--cream-light), var(--gray-light));
+}
+
+.transition-opacity {
+  transition: opacity 1s ease-in-out;
+}
+
+.text-gray-700 {
+  color: var(--gray);
+}
+
+.text-gray-600 {
+  color: var(--gray-dark);
+}
+
+

@@ -1,0 +1,16 @@
+/* Section.module.css */
+.section {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .sectionTitle {
+    color: #4CAF50;
+  }
+  
+  .sectionText {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  

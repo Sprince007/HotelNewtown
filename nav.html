@@ -1,0 +1,40 @@
+import Link from 'next/link';
+import styles from '../styles/Nav.module.css';
+
+const Nav = () => {
+  return (
+    <nav className="bg-white shadow-md fixed w-full z-50">
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="text-xl font-bold text-gray-800">
+          <Link href="/">Hotel Newtown</Link>
+        </div>
+        <ul className="flex space-x-8">
+          <li>
+            <Link href="/" className="text-gray-800 hover:text-green-600">Home</Link>
+          </li>
+          <li>
+            <Link href="/rooms" className="text-gray-800 hover:text-green-600">Rooms</Link>
+          </li>
+          <li>
+            <Link href="/about" className="text-gray-800 hover:text-green-600">About Us</Link>
+          </li>
+          
+          <li>
+            <Link href="/services" className="text-gray-800 hover:text-green-600">Services</Link>
+          </li>
+          <li>
+            <Link href="/faq" className="text-gray-800 hover:text-green-600">FAQ</Link>
+          </li>
+          <li>
+            <Link href="/policies" className="text-gray-800 hover:text-green-600">Policies</Link>
+          </li>
+          <li>
+            <Link href="/contact" className="text-gray-800 hover:text-green-600">Contact</Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
+};
+
+export default Nav;
