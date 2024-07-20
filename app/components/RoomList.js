@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import styles from '../styles/Modal.module.css';
+import styles from '../styles/MModal.module.css';
 
 const rooms = [ 
     {

@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carous
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
-import styles from '../styles/Modal.module.css'; // Import the CSS for the modal
+import styles from '../styles/MModal.module.css'; // Import the CSS for the modal
 
 const rooms = [
   {
