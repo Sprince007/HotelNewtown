@@ -99,7 +99,7 @@ const RoomList = () => {
   };
 
   return (
-    <div className="p-2 " style={{ backgroundColor: '#6E6E61' }}>
+    <div className="p-2 " style={{ backgroundColor: '#483C32' }}>
       <h1 className="text-3xl font-bold text-white mb-8 text-center " style={{ fontFamily: 'Times New Roman, serif' }}>Our Favourite Rooms</h1>
       <Slider {...settings}>
         {rooms.map((room, index) => (
@@ -107,7 +107,7 @@ const RoomList = () => {
             <img src={room.image} alt={room.name} className="w-full h-48 object-contain mb-4 rounded-md" />
             <h2 className="text-2xl font-bold text-white mb-2">{room.name}</h2>
             <p className="text-yellow-500 mb-4">From {room.price} /night </p>
-            <button onClick={() => openModal(room)} className="text-blue-300 font-bold underline">Room details</button>
+            <button onClick={() => openModal(room)} className="text-black font-bold underline">Room details</button>
           </div>
         ))}
       </Slider>

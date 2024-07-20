@@ -1,8 +1,130 @@
 /* Footer.module.css */
 .footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-  }
-  
+  background-color: #12172b;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.section {
+  flex: 1 1 200px;
+  margin-bottom: 1rem;
+  margin-left: 0.7rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section.fadeInUp {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d4af37;
+  margin-bottom: 1rem;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.brand:hover {
+  color: #ffdd57;
+}
+
+.languageSelector {
+  margin-top: 1rem;
+}
+
+.languageDropdown {
+  background-color: #12172b;
+  border: 1px solid #ffffff;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.languageDropdown:hover {
+  background-color: #d4af37;
+  color: #12172b;
+}
+
+.sectionTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-left: 6rem;
+  margin-right: 7rem;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+.sectionTitle:hover {
+  color: #ffdd57;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin-left:1rem;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.link:hover {
+  color: #d4af37;
+  transform: translateX(10px);
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  margin-left: 7rem;
+  transition: margin-left 0.3s ease;
+}
+
+.socialIcons:hover {
+  margin-left: 9rem;
+}
+
+.icon {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.icon:hover {
+  color: #d4af37;
+  transform: scale(1.1);
+}
+
+.copyright {
+  border-top: 1px solid #4b5563;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+.copyright:hover {
+  color: #d4af37;
+}

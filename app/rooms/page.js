@@ -85,14 +85,14 @@ const Rooms = () => {
       </div>
       <div className="flex-1 p-8 bg-gradient-to-r from-cream via-cream-light to-gray-light mt-20">
         <div className="container mx-auto">
-          <h1 className="text-5xl font-bold text-center text-gray-800 mb-12">Our Rooms</h1>
+          <h1 className="text-5xl font-bold text-center text-gray-800 mb-12 fade-in">Our Rooms</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {rooms.map((room, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <img src={room.image} alt={room.name} className="w-full h-48 object-contain mb-4 rounded-md" />
-                <h2 className="text-2xl font-bold text-gray-800 mb-2">{room.name}</h2>
-                <p className="text-gray-700 mb-4">Price: {room.price}</p>
-                <button onClick={() => openModal(room)} className="text-blue-600 font-bold underline">Room details</button>
+              <div key={index} className="bg-white p-6 rounded-lg shadow-lg transition transform hover:scale-105">
+                <img src={room.image} alt={room.name} className="w-full h-48 object-contain mb-4 rounded-md transition duration-500 ease-in-out transform hover:scale-110" />
+                <h2 className="text-2xl font-bold text-gray-800 mb-2 fade-in">{room.name}</h2>
+                <p className="text-yellow-600 mb-4">Price: {room.price} /night</p>
+                <button onClick={() => openModal(room)} className="text-gray-800 font-bold underline">Room details</button>
               </div>
             ))}
           </div>
@@ -107,7 +107,7 @@ const Rooms = () => {
           className={styles.modal}
           overlayClassName={styles.overlay}
         >
-          <div className="p-4 bg-cream rounded-lg">
+          <div className="p-4 bg-cream rounded-lg slide-in">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-2xl font-bold text-gray-800">{selectedRoom.name}</h2>
               <button onClick={closeModal} className={styles['close-button']}>&times;</button>
@@ -115,7 +115,7 @@ const Rooms = () => {
             <Carousel showThumbs={false} className={styles.carousel}>
               {selectedRoom.images.map((image, idx) => (
                 <div key={idx}>
-                   <img src={image} alt={`${selectedRoom.name} ${idx + 1}`} style={{ width: '100%', height: '48vh', objectFit: 'contain' }} className="rounded-md" />
+                  <img src={image} alt={`${selectedRoom.name} ${idx + 1}`} style={{ width: '100%', height: '48vh', objectFit: 'contain' }} className="rounded-md" />
                 </div>
               ))}
             </Carousel>
