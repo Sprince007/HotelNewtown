@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col relative bg-gray-100">
+    <div className="min-h-screen flex flex-col bg-gray-100">
       <Header />
       <Nav />
       <div className="min-h-20 flex flex-col p-3" style={{ backgroundColor: '#12172b' }}>
@@ -81,28 +81,28 @@ const Contact = () => {
       >
         <div className="container mx-auto flex flex-col md:flex-row">
           <motion.div
-            className={`${styles.contactInfo} bg-white p-6 rounded-lg shadow-lg md:w-1/3`}
+            className={`${styles.contactInfo} bg-gray-800 text-white p-6 rounded-lg shadow-lg md:w-1/3`}
             variants={itemVariants}
           >
-            <h2 className="text-2xl font-bold text-white mb-4">Contact info</h2>
+            <h2 className="text-2xl font-bold mb-4">Contact info</h2>
             <div className="mb-4">
-              <h3 className="text-xl font-bold text-white">Address</h3>
-              <p className="text-white">Ballace, Yaoundé, Cameroon</p>
+              <h3 className="text-xl font-bold">Address</h3>
+              <p>Ballace, Yaoundé, Cameroon</p>
             </div>
             <div className="mb-4">
-              <h3 className="text-xl font-bold text-white">Write us</h3>
-              <p className="text-white">info@newtownhotel.net</p>
+              <h3 className="text-xl font-bold">Write us</h3>
+              <p>info@newtownhotel.net</p>
             </div>
             <div className="mb-4">
-              <h3 className="text-xl font-bold text-white">Call us</h3>
-              <p className="text-white">
+              <h3 className="text-xl font-bold">Call us</h3>
+              <p>
                 <i className="fab fa-whatsapp"></i> 699 89 02 20 <br />
                 <i className="fas fa-phone"></i> 650935097
                 <i className="fas fa-phone mx-3"></i> 222 22 21 31
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-white">Follow us</h3>
+              <h3 className="text-xl font-bold">Follow us</h3>
               <div className="flex space-x-4">
                 <a href="#" className="text-white"><i className="fab fa-facebook-f"></i></a>
                 <a href="#" className="text-white"><i className="fab fa-twitter"></i></a>

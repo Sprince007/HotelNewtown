@@ -1,5 +1,4 @@
-// app/faq.js
-"use client"
+"use client";
 import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
@@ -45,12 +44,12 @@ const FAQ = () => {
         </p>
       </div>
       <div className="flex-1 p-8 bg-gradient-to-r from-cream via-cream-light to-gray-light">
-        <div className="container mx-auto p-10 bg-white shadow-lg rounded-lg">
-          <h1 className="text-5xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions</h1>
+        <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg">
+          <h1 className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8">Frequently Asked Questions</h1>
           {faqs.map((faq, index) => (
             <div key={index} className="mb-6">
               <h2
-                className="text-2xl font-bold flex justify-between items-center cursor-pointer p-4 bg-gray-100 rounded-lg transition-colors duration-300 hover:bg-gray-200"
+                className="text-xl md:text-2xl font-bold flex justify-between items-center cursor-pointer p-4 bg-gray-100 rounded-lg transition-colors duration-300 hover:bg-gray-200"
                 onClick={() => toggleFAQ(index)}
               >
                 {faq.question}

@@ -25,22 +25,22 @@ const About = () => {
         </p>
       </div>
       <div className="flex-1 bg-gradient-to-r from-cream via-cream-light to-gray-light mt-20">
-        <div className="container mx-auto">
-          <div className="relative w-full h-[500px]" style={{ backgroundImage: 'url("/FormatFactoryIMG_0021.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+        <div className="container mx-auto p-4 md:p-10">
+          <div className="relative w-full h-80 md:h-[500px]" style={{ backgroundImage: 'url("/FormatFactoryIMG_0021.jpg")', backgroundSize: 'cover', backgroundPosition: 'center' }}>
             <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className={`text-6xl font-bold text-white mb-12 text-center ${loaded ? 'animate-fade-in' : 'opacity-0'}`}>
+              <h1 className={`text-4xl md:text-6xl font-bold text-white mb-12 text-center ${loaded ? 'animate-fade-in' : 'opacity-0'}`}>
                 About Us
               </h1>
             </div>
           </div>
-          <div className="bg-white p-10 rounded-lg shadow-2xl flex flex-col md:flex-row mt-10 transform transition-all duration-700 hover:scale-105">
+          <div className="bg-white p-4 md:p-10 rounded-lg shadow-2xl flex flex-col md:flex-row mt-10 transform transition-all duration-700 hover:scale-105">
             <div className="md:w-2/3">
-              <h2 className="text-5xl font-bold text-gray-800 mb-4">Welcome to Newtown</h2>
-              <h3 className="text-2xl font-bold text-gray-600 mb-6">Our Hotel has been present for over 20 years.</h3>
-              <p className={`mb-8 text-lg text-gray-800 leading-relaxed ${loaded ? 'animate-slide-in' : 'opacity-0 translate-x-10'}`}>
+              <h2 className="text-3xl md:text-5xl font-bold text-gray-800 mb-4">Welcome to Newtown</h2>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-600 mb-6">Our Hotel has been present for over 20 years.</h3>
+              <p className={`mb-8 text-base md:text-lg text-gray-800 leading-relaxed ${loaded ? 'animate-slide-in' : 'opacity-0 translate-x-10'}`}>
                 We make the best for all our customers.
               </p>
-              <p className={`mb-8 text-lg text-gray-800 leading-relaxed ${loaded ? 'animate-slide-in' : 'opacity-0 translate-x-10'}`}>
+              <p className={`mb-8 text-base md:text-lg text-gray-800 leading-relaxed ${loaded ? 'animate-slide-in' : 'opacity-0 translate-x-10'}`}>
                 Our objective at Newtown is to bring together our visitors' societies and spirits with our own, communicating enthusiasm and liberality in the food we share. Official Chef and Owner Philippe Massoud superbly creates a blend of Lebanese, Levantine, Mediterranean motivated food blended in with New York mentality. Delightful herbs and flavors consolidate surfaces to pacify wide-based palates.
               </p>
               <div className="flex items-center mt-10">
@@ -57,8 +57,8 @@ const About = () => {
               <Image src="/FormatFactoryIMG_0130.jpg" alt="Happy Customer" width={300} height={200} className="rounded-lg shadow-lg hover:scale-110 transition transform duration-500" />
             </div>
           </div>
-          <div className="bg-white p-10 rounded-lg shadow-2xl mt-10 transform transition-all duration-700 hover:scale-105">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center">Hotel Facilities</h2>
+          <div className="bg-white p-4 md:p-10 rounded-lg shadow-2xl mt-10 transform transition-all duration-700 hover:scale-105">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">Hotel Facilities</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="p-6 border rounded-lg text-center transform transition duration-500 hover:scale-105">
                 <i className="fas fa-shuttle-van fa-3x mb-4 text-orange-500"></i>
@@ -92,9 +92,9 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="bg-white p-10 rounded-lg shadow-2xl mt-10 transform transition-all duration-700 hover:scale-105">
-            <h2 className="text-4xl font-bold text-gray-800 mb-4 text-center">Our Team</h2>
-            <h3 className="text-3xl font-bold text-gray-600 mb-10 text-center">Meet Our Leaders</h3>
+          <div className="bg-white p-4 md:p-10 rounded-lg shadow-2xl mt-10 transform transition-all duration-700 hover:scale-105">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4 text-center">Our Team</h2>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-600 mb-10 text-center">Meet Our Leaders</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="flex flex-col items-center transform transition duration-500 hover:scale-105">
                 <Image src="/path/to/image1.jpg" alt="Dianne Russell" width={300} height={200} className="rounded-lg shadow-lg" />

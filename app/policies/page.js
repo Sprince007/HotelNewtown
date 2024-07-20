@@ -47,10 +47,7 @@ const Policies = () => {
     {
       title: "Payment Terms",
       icon: FaMoneyBillAlt,
-      items: [
-        "Orange / MTN mobile money",
-        "Payment is due upon check-in",
-      ],
+      items: ["Orange / MTN mobile money", "Payment is due upon check-in"],
     },
     {
       title: "Room Rates and Availability",
@@ -179,9 +176,9 @@ const Policies = () => {
         </p>
       </div>
       <div className="flex-1 p-8 bg-gradient-to-r from-cream via-cream-light to-gray-light">
-        <div className="container mx-auto p-10 bg-white shadow-lg rounded-lg">
+        <div className="container mx-auto p-6 md:p-10 bg-white shadow-lg rounded-lg">
           <motion.h1
-            className="text-5xl font-bold text-center text-gray-800 mb-8"
+            className="text-4xl md:text-5xl font-bold text-center text-gray-800 mb-8"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
@@ -199,7 +196,7 @@ const Policies = () => {
                 variants={containerVariants}
               >
                 <motion.h2
-                  className="text-3xl font-bold flex items-center mb-4 text-gray-700"
+                  className="text-2xl md:text-3xl font-bold flex items-center mb-4 text-gray-700"
                   variants={itemVariants}
                 >
                   <policy.icon className="mr-4" />

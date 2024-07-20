@@ -22,7 +22,7 @@ const Footer = () => {
         <div className={styles.section}>
           <h2 className={styles.brand}>New Town</h2>
           <p>
-            Our objective at New town Hotel is to bring together our visitors' societies and spirits with our own,
+            Our objective at New Town Hotel is to bring together our visitors' societies and spirits with our own,
             communicating enthusiasm and liberality in the food we share. Official Chef and Owner Philippe Massoud
             superbly creates a blend of Lebanese, Levantine, Mediterranean inspired food mixed with New York mentality.
             Delightful herbs and flavors combine textures to appease wide-based palates.
@@ -31,7 +31,6 @@ const Footer = () => {
             <select className={styles.languageDropdown}>
               <option value="en">English</option>
               <option value="fr">French</option>
-              {/* Add more languages as needed */}
             </select>
           </div>
         </div>
@@ -65,7 +64,7 @@ const Footer = () => {
           <p>Ballace, Yaoundé, Cameroon</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.7960481256314!2d11.493328246587701!3d3.8539041337453335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x108bcf0d76f8edb7%3A0xd86346f12a61c892!2sNew%20Town%20Hotel!5e0!3m2!1sen!2sde!4v1720346240005!5m2!1sen!2sde"
-            width="500"
+            width="100%"
             height="300"
             style={{ border: 0 }}
             allowFullScreen=""
@@ -74,7 +73,7 @@ const Footer = () => {
         </div>
         <div className={styles.section}>
           <h3 className={styles.sectionTitle}>Contact Us</h3>
-          <p><i className="fas fa-phone text-yellow-600"></i>  650935097 / 222 222 131</p>
+          <p><i className="fas fa-phone text-yellow-600"></i> 650935097 / 222 222 131</p>
           <p><i className="fas fa-envelope text-yellow-600"></i> info@newtownhotel.net</p>
           <div className={styles.socialIcons}>
             <a href="#" className={styles.icon}><i className="fab fa-facebook-f"></i></a>

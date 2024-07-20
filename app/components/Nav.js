@@ -2,9 +2,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
+import { FiMenu, FiX } from 'react-icons/fi';
 
 const Nav = () => {
   const [activePath, setActivePath] = useState('');
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -12,6 +14,10 @@ const Nav = () => {
       setActivePath(pathname);
     }
   }, []);
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <nav className="shadow-md fixed w-full z-50" style={{ backgroundColor: '#111111' }}>
@@ -22,13 +28,13 @@ const Nav = () => {
               <Image src="/New Town Hotel logo web.png" alt="New Town Hotel Logo" width={100} height={60} />
             </a>
           </Link>
-          <div className="text-2xl font-bold text-white">
-            <Link href="/" legacyBehavior>
-              <a></a>
-            </Link>
-          </div>
         </div>
-        <ul className="flex space-x-8">
+        <div className="md:hidden">
+          <button onClick={toggleDropdown} className="text-white">
+            {isDropdownOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          </button>
+        </div>
+        <ul className={`nav-links flex-col md:flex md:flex-row space-y-4 md:space-y-0 md:space-x-8 ${isDropdownOpen ? 'flex dropdown-open' : 'hidden'}`}>
           <li>
             <Link href="/" legacyBehavior>
               <a className={`text-white hover:text-yellow-600 ${activePath === '/' ? 'text-yellow-600' : ''}`}>Home</a>
@@ -66,6 +72,36 @@ const Nav = () => {
           </li>
         </ul>
       </div>
+      <style jsx>{`
+        @media (orientation: portrait) {
+          .nav-links {
+            padding-left: 1rem;
+            width: 100%;
+          }
+          .nav-links li {
+            width: 100%;
+            text-align: left;
+          }
+          .nav-links li a {
+            display: block;
+            padding: 10px;
+          }
+        }
+
+        @media (orientation: landscape) {
+          .nav-links {
+            flex-direction: row;
+            justify-content: flex-end;
+          }
+          .nav-links li {
+            width: auto;
+          }
+          .nav-links li a {
+            display: inline-block;
+            padding: 0;
+          }
+        }
+      `}</style>
     </nav>
   );
 };

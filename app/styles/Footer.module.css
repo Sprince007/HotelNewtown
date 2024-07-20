@@ -64,8 +64,6 @@
   font-size: 1.25rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  margin-left: 6rem;
-  margin-right: 7rem;
   font-style: italic;
   transition: color 0.3s ease;
 }
@@ -77,7 +75,6 @@
 .links {
   list-style: none;
   padding: 0;
-  margin-left:1rem;
 }
 
 .link {
@@ -97,12 +94,6 @@
   display: flex;
   gap: 0.5rem;
   margin-top: 1rem;
-  margin-left: 7rem;
-  transition: margin-left 0.3s ease;
-}
-
-.socialIcons:hover {
-  margin-left: 9rem;
 }
 
 .icon {

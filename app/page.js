@@ -1,5 +1,5 @@
 'use client';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import React from 'react';
 import { motion } from 'framer-motion';
 import Slider from 'react-slick';
@@ -12,7 +12,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from 'next/link';
 
-<SpeedInsights/>
+<SpeedInsights />
 
 const Home = () => {
   const settings = {
@@ -64,7 +64,7 @@ const Home = () => {
         <h3 className="text-xl font-bold text-transparent">Call us</h3>
         <p className="text-white">
           <i className="fas fa-phone"></i> 650935097
-          <i className="fas fa-phone mx-3"></i> 222 22 21 31
+          <i className="fas fa-phone mx-3"></i> 222222131
           <i className="fas fa-regular fa-envelope mx-5"></i>info@newtownhotel.net
         </p>
       </div>
@@ -72,7 +72,7 @@ const Home = () => {
         <Slider {...settings}>
           {images.map((src, index) => (
             <div key={index}>
-              <img src={src} alt={`Hotel Image ${index + 1}`} className="w-full h-[600px] object-fit: contain brightness-100" />
+              <img src={src} alt={`Hotel Image ${index + 1}`} className="w-full h-[600px] object-cover brightness-100" />
             </div>
           ))}
         </Slider>
@@ -118,7 +118,7 @@ const Home = () => {
           >
             Experience the luxury and comfort of our premier accommodation facility.
           </motion.p>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8 text-center">
             {[
               { icon: FaWifi, text: 'Free High-Speed WiFi' },
               { icon: FaConciergeBell, text: '24 hours reception' },
@@ -138,7 +138,7 @@ const Home = () => {
             ))}
           </div>
           <motion.div
-            className="bg-white p-10 rounded-lg shadow-2xl mb-8"
+            className="bg-white p-6 md:p-10 rounded-lg shadow-2xl mb-8"
             variants={itemVariants}
           >
             <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">Why Choose New Town Hotel</h2>
@@ -169,6 +169,43 @@ const Home = () => {
         </div>
       </motion.div>
       <Footer />
+      <style jsx>{`
+        @media (orientation: portrait) {
+          .text-6xl {
+            font-size: 2.5rem;
+          }
+          .text-4xl {
+            font-size: 2rem;
+          }
+          .p-8 {
+            padding: 1rem;
+          }
+          .h-[600px] {
+            height: 300px;
+          }
+          .text-lg {
+            font-size: 1rem;
+          }
+        }
+
+        @media (orientation: landscape) {
+          .text-6xl {
+            font-size: 4rem;
+          }
+          .text-4xl {
+            font-size: 3rem;
+          }
+          .p-8 {
+            padding: 2rem;
+          }
+          .h-[600px] {
+            height: 600px;
+          }
+          .text-lg {
+            font-size: 1.25rem;
+          }
+        }
+      `}</style>
     </div>
   );
 };
