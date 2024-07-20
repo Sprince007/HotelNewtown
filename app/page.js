@@ -1,4 +1,5 @@
 'use client';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import React from 'react';
 import { motion } from 'framer-motion';
 import Slider from 'react-slick';
@@ -10,6 +11,8 @@ import { FaWifi, FaConciergeBell, FaBed, FaTv, FaCoffee, FaBroom } from 'react-i
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Link from 'next/link';
+
+<SpeedInsights/>
 
 const Home = () => {
   const settings = {
