@@ -73,7 +73,7 @@ const Home = () => {
               { icon: FaTv, text: 'Flat screen TV' },
               { icon: FaCoffee, text: 'Tea & coffee making facilities' },
               { icon: FaBroom, text: 'Daily Housekeeping' },
-              { icon: FaBed, text: 'Hypnos beds with crisp white linen' },
+              
             ].map(({ icon: Icon, text }, index) => (
               <div key={index} className="transition-transform duration-500 transform hover:scale-105">
                 <Icon className="mb-2 text-4xl text-yellow-600 mx-auto" />

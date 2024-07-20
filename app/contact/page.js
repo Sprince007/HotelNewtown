@@ -1,12 +1,11 @@
-// pages/contact.js
 "use client";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Footer from '../components/Footer';
 import styles from '../styles/Contact.module.css';
-import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import axios from 'axios';
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -21,14 +20,14 @@ const Contact = () => {
     setForm({ ...form, [name]: value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    emailjs.send('service_rdpt99r', 'template_6sjcf0h', form, 'qgeSpJoVp2kf7yGk4')
-      .then((result) => {
-        alert('Message sent successfully!');
-      }, (error) => {
-        alert('Thank you.');
-      });
+    try {
+      await axios.post('http://localhost:5000/send', form);
+      alert('Message sent successfully!');
+    } catch (error) {
+      alert('There was an error sending the message.');
+    }
   };
 
   return (
@@ -100,20 +99,12 @@ const Contact = () => {
               <div className="mb-4">
                 <textarea name="message" placeholder="Message" className="w-full p-2 border border-gray-300 rounded-md" value={form.message} onChange={handleChange}></textarea>
               </div>
-              <button type="submit" className="bg-gray-800 text-white px-4 py-2 rounded-md">Send the message</button>
+              <button type="submit" className="bg-gray-800 text-white px-4 py-2 rounded-md">Send</button>
             </form>
           </div>
         </div>
       </div>
       <Footer />
-      <a 
-        href="https://wa.me/699890220" 
-        className="fixed bottom-20 right-8 bg-green-500 text-white p-3 rounded-full shadow-lg" 
-        target="_blank" 
-        rel="noopener noreferrer"
-      >
-        <i className="fab fa-whatsapp text-2xl"></i>
-      </a>
     </div>
   );
 };

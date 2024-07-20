@@ -70,3 +70,53 @@
     margin-right: 0;
   }
   
+  /* General Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Flexbox Layout for Contact Section */
+.contactSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactInfo, .contactForm {
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .contactSection {
+    flex-direction: row;
+  }
+
+  .contactInfo, .contactForm {
+    flex: 1;
+    margin-bottom: 0;
+  }
+
+  .contactForm {
+    margin-left: 20px;
+  }
+}
+
+/* Make Images Responsive */
+.responsiveImage, .responsiveIframe {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive Navigation */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
