@@ -96,7 +96,7 @@ const Contact = () => {
             <div className="mb-4">
               <h3 className="text-xl font-bold">Call us</h3>
               <p>
-                <i className="fab fa-whatsapp"></i> 699 89 02 20 <br />
+                <i className="fab fa-whatsapp"></i> 650935097 <br />
                 <i className="fas fa-phone"></i> 650935097
                 <i className="fas fa-phone mx-3"></i> 222 22 21 31
               </p>
@@ -165,6 +165,20 @@ const Contact = () => {
               </button>
             </form>
           </motion.div>
+          {/* WhatsApp Button */}
+          <motion.div
+              className="md:ml-8 md:mt-0 mt-8 flex items-center justify-center"
+              variants={itemVariants}
+            >
+              <a
+                href="https://wa.me/237650935097"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 text-white px-1 py-1 rounded-full flex  hover:bg-green-600 transition-colors duration-300"
+              >
+                <i className="fab fa-whatsapp mr-1 text-2xl"></i> WhatsApp Us
+              </a>
+            </motion.div>
         </div>
       </motion.div>
       <Footer />
