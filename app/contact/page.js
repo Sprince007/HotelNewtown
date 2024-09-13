@@ -104,7 +104,14 @@ const Contact = () => {
             <div>
               <h3 className="text-xl font-bold">Follow us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-white"><i className="fab fa-facebook-f"></i></a>
+                <a
+                  href="https://www.facebook.com/profile.php?id=61565694118010&mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-white"
+                >
+                  <i className="fab fa-facebook-f"></i>
+                </a>
                 <a href="#" className="text-white"><i className="fab fa-twitter"></i></a>
                 <a href="#" className="text-white"><i className="fab fa-youtube"></i></a>
                 <a href="#" className="text-white"><i className="fab fa-instagram"></i></a>
@@ -167,18 +174,18 @@ const Contact = () => {
           </motion.div>
           {/* WhatsApp Button */}
           <motion.div
-              className="md:ml-8 md:mt-0 mt-8 flex items-center justify-center"
-              variants={itemVariants}
+            className="md:ml-8 md:mt-0 mt-8 flex items-center justify-center"
+            variants={itemVariants}
+          >
+            <a
+              href="https://wa.me/237650935097"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-green-500 text-white px-1 py-1 rounded-full flex hover:bg-green-600 transition-colors duration-300"
             >
-              <a
-                href="https://wa.me/237650935097"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 text-white px-1 py-1 rounded-full flex  hover:bg-green-600 transition-colors duration-300"
-              >
-                <i className="fab fa-whatsapp mr-1 text-2xl"></i> WhatsApp Us
-              </a>
-            </motion.div>
+              <i className="fab fa-whatsapp mr-1 text-2xl"></i> WhatsApp Us
+            </a>
+          </motion.div>
         </div>
       </motion.div>
       <Footer />
