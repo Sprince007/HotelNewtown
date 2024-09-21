@@ -178,7 +178,7 @@ const Contact = () => {
             variants={itemVariants}
           >
             <a
-              href="https://wa.me/237694809463"
+              href="https://wa.me/2376948094633"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-1 py-1 rounded-full flex hover:bg-green-600 transition-colors duration-300"
