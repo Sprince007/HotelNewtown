@@ -96,8 +96,8 @@ const Contact = () => {
             <div className="mb-4">
               <h3 className="text-xl font-bold">Call us</h3>
               <p>
-                <i className="fab fa-whatsapp"></i> 650935097 <br />
-                <i className="fas fa-phone"></i> 650935097
+                <i className="fab fa-whatsapp"></i> +237 694809463 <br />
+                <i className="fas fa-phone"></i> +237 679044175
                 <i className="fas fa-phone mx-3"></i> 222 22 21 31
               </p>
             </div>
@@ -178,7 +178,7 @@ const Contact = () => {
             variants={itemVariants}
           >
             <a
-              href="https://wa.me/237650935097"
+              href="https://wa.me/237694809463"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-1 py-1 rounded-full flex hover:bg-green-600 transition-colors duration-300"
