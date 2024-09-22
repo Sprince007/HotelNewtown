@@ -170,7 +170,7 @@ const Policies = () => {
       <div className="min-h-20 flex flex-col p-3" style={{ backgroundColor: '#12172b' }}>
         <h3 className="text-xl font-bold text-transparent">Call us</h3>
         <p className="text-white">
-          <i className="fas fa-phone"></i> 650935097
+          <i className="fas fa-phone"></i> 694809463
           <i className="fas fa-phone mx-3"></i> 222 22 21 31
           <i className="fas fa-envelope mx-5"></i> info@newtownhotel.net
         </p>
