@@ -52,7 +52,7 @@ const Contact = () => {
       <div className="min-h-20 flex flex-col p-3" style={{ backgroundColor: '#12172b' }}>
         <h3 className="text-xl font-bold text-transparent">Call us</h3>
         <p className="text-white">
-          <i className="fas fa-phone"></i> 694809463
+          <i className="fas fa-phone"></i> +237 674925061
           <i className="fas fa-phone mx-3"></i> 222 22 21 31
           <i className="fas fa-envelope mx-5"></i> info@newtownhotel.net
         </p>
@@ -96,8 +96,8 @@ const Contact = () => {
             <div className="mb-4">
               <h3 className="text-xl font-bold">Call us</h3>
               <p>
-                <i className="fab fa-whatsapp"></i> +237679044175 <br />
-                <i className="fas fa-phone"></i> +237694809463
+                <i className="fab fa-whatsapp"></i> +237 674925061 <br />
+                <i className="fas fa-phone"></i> +237 674925061
                 <i className="fas fa-phone mx-3"></i> 222 22 21 31
               </p>
             </div>
@@ -178,7 +178,7 @@ const Contact = () => {
             variants={itemVariants}
           >
             <a
-              href="https://wa.me/+237679044175"
+              href="https://wa.me/+237674925061"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-green-500 text-white px-1 py-1 rounded-full flex hover:bg-green-600 transition-colors duration-300"

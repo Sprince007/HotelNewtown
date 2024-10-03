@@ -73,7 +73,7 @@ const Footer = () => {
         </div>
         <div className={styles.section}>
           <h3 className={styles.sectionTitle}>Contact Us</h3>
-          <p><i className="fas fa-phone text-yellow-600"></i> 694809463 / 222 222 131</p>
+          <p><i className="fas fa-phone text-yellow-600"></i> +237 674925061 / 222 222 131</p>
           <p><i className="fas fa-envelope text-yellow-600"></i> info@newtownhotel.net</p>
           <div className={styles.socialIcons}>
             <a href="https://www.facebook.com/profile.php?id=61565694118010&mibextid=ZbWKwL" className={styles.icon}><i className="fab fa-facebook-f"></i></a>
